@@ -1,9 +1,10 @@
-import 'StudentList.dart';
+import 'package:school_management_app/login_screen.dart';
+import 'package:school_management_app/student_list.dart';
+
 import 'posts.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'login.dart';
 import 'model.dart';
 
 class Teacher extends StatefulWidget {

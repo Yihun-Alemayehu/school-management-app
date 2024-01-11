@@ -1,8 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import 'login.dart';
+import 'package:school_management_app/login_screen.dart';
 import 'model.dart';
 
 class Student extends StatefulWidget {
