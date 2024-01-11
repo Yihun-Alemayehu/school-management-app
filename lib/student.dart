@@ -31,7 +31,7 @@ class _StudentState extends State<Student> {
       CircularProgressIndicator();
       setState(() {
         emaill = loggedInUser.email.toString();
-        rooll = loggedInUser.wrool.toString();
+        rooll = loggedInUser.Wrole.toString();
         id = loggedInUser.uid.toString();
       });
     });

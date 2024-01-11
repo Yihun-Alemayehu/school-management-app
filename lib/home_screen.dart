@@ -46,7 +46,7 @@ class _controState extends State<contro> {
       CircularProgressIndicator();
       setState(() {
         emaill = loggedInUser.email.toString();
-        rooll = loggedInUser.wrool.toString();
+        rooll = loggedInUser.Wrole.toString();
         id = loggedInUser.uid.toString();
       });
     });
@@ -66,7 +66,7 @@ class _controState extends State<contro> {
 
   @override
   Widget build(BuildContext context) {
-    CircularProgressIndicator();
+    const CircularProgressIndicator();
     return routing();
   }
 }
