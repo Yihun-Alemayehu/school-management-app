@@ -9,7 +9,7 @@ import 'model.dart';
 
 class Teacher extends StatefulWidget {
   String id;
-  Teacher({required this.id});
+  Teacher({super.key, required this.id});
   @override
   _TeacherState createState() => _TeacherState(id: id);
 }

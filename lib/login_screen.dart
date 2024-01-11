@@ -13,8 +13,8 @@ class _LoginPageState extends State<LoginPage> {
   bool _isObscure3 = true;
   bool visible = false;
   final _formkey = GlobalKey<FormState>();
-  final TextEditingController emailController = new TextEditingController();
-  final TextEditingController passwordController = new TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   final _auth = FirebaseAuth.instance;
   @override
@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
               height: MediaQuery.of(context).size.height * 0.70,
               child: Center(
                 child: Container(
-                  margin: EdgeInsets.all(12),
+                  margin: const EdgeInsets.all(12),
                   child: Form(
                     key: _formkey,
                     child: Column(
