@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:school_management_app/firebase_options.dart';
+import 'package:school_management_app/register_screen.dart';
 
 void main() async{
   await Firebase.initializeApp(
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: RegisterScreen(),
+      home: Register(),
     );
   }
 }

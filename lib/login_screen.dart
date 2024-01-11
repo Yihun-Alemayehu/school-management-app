@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'forgot.dart';
-import 'home.dart';
-import 'register.dart';
+import 'package:school_management_app/forget.dart';
+import 'package:school_management_app/home_screen.dart';
+import 'package:school_management_app/register_screen.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -132,12 +132,12 @@ class _LoginPageState extends State<LoginPage> {
                           },
                           keyboardType: TextInputType.emailAddress,
                         ),
-                        RaisedButton(
-                          color: Colors.orange[900],
-                          textColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                              // side: BorderSide(color: Colors.black, width: 1),
-                              ),
+                        ElevatedButton(
+                          // color: Colors.orange[900],
+                          // textColor: Colors.white,
+                          // shape: RoundedRectangleBorder(
+                          //     // side: BorderSide(color: Colors.black, width: 1),
+                          //     ),
                           onPressed: () {
                             Navigator.of(context).pushReplacement(
                               MaterialPageRoute(
